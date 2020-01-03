@@ -11,18 +11,18 @@
 namespace ConsolePLG {
 	
 	
-	public partial class Default {
+	public partial class ViewByCountry {
 		
 		protected System.Web.UI.WebControls.Content Content1;
 		
-		protected System.Web.UI.WebControls.TextBox uTxtBox;
+		protected System.Web.UI.WebControls.DropDownList countriesDropDown;
 		
-		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEmail;
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorCompanies;
 		
-		protected System.Web.UI.WebControls.TextBox passwordTxtBox;
+		protected System.Web.UI.WebControls.DropDownList companiesDropDown;
 		
-		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPassword;
+		protected System.Web.UI.WebControls.Button filter;
 		
-		protected System.Web.UI.WebControls.Button submit;
+		protected System.Web.UI.HtmlControls.HtmlGenericControl comments;
 	}
 }

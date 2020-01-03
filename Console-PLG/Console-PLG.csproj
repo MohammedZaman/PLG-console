@@ -30,12 +30,24 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
-    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <Content Include="Master.master" />
+    <Content Include="css\OverallStyle.css" />
+    <Content Include="ViewByCompany.aspx" />
+    <Content Include="ViewByCountry.aspx" />
+    <Content Include="LogOut.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -47,6 +59,40 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AccessAPI.cs" />
+    <Compile Include="Objects\Company.cs" />
+    <Compile Include="Objects\CompanyCountry.cs" />
+    <Compile Include="Objects\Country.cs" />
+    <Compile Include="Master.master.cs">
+      <DependentUpon>Master.master</DependentUpon>
+    </Compile>
+    <Compile Include="Master.master.designer.cs">
+      <DependentUpon>Master.master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewByCompany.aspx.cs">
+      <DependentUpon>ViewByCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewByCompany.aspx.designer.cs">
+      <DependentUpon>ViewByCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Customer.cs" />
+    <Compile Include="Objects\Authorisation.cs" />
+    <Compile Include="ViewByCountry.aspx.cs">
+      <DependentUpon>ViewByCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewByCountry.aspx.designer.cs">
+      <DependentUpon>ViewByCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\" />
+    <Folder Include="css\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -1,0 +1,21 @@
+﻿body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:#fafafa;
+
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+.center-text {
+text-align:center;
+}
+
+.themes {
+background-color:#232b2b;
+}
+

@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" Inherits="ConsolePLG.Master" %>
+    <!DOCTYPE html>
+    <html>
+    <head runat="server">
+        <title>PLG </title>
+        <!-- Site CSS Framework -->
+         
+          <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+         <!-- custom CSS -->
+         <link rel="stylesheet" type="text/css" href="css/OverallStyle.css">
+         
+         <!-- Icons -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+                                                                  
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    
+    
+    <body>
+
+   <header>
+   
+    <div id="container" >
+    <nav>
+    <div class="nav-wrapper themes">
+      <a href="Default.aspx" style="padding:0px 5px;" class="brand-logo">PLG</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li runat="server" id="signMenu"> <a href="SignIn.aspx">Add Company</a></li>
+          <li runat="server" id="rentalMenu"> <a href="ViewByCompany.aspx">ViewByCompany</a></li>
+          <li runat="server" id="returnMenu"> <a href="ViewByCountry.aspx">ViewByCountry</a></li>
+           <li runat="server" id="logMenu"> <a href="LogOut.aspx">Log Out</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </div>
+  </header>
+  
+  
+  <main>  
+    <form runat="server" method="post">
+        <asp:ContentPlaceHolder id="contentPlaceHolder" runat="server" /> 
+    </form>
+ </main>
+ 
+ <footer class="page-footer themes">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                
+              </div>
+        
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <p>&#x24B8; 2019 PLG</p>
+           
+            </div>
+          </div>
+        </footer>
+    
+    </body>
+       
+    </html>
+    
+ 
