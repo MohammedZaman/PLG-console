@@ -48,6 +48,7 @@
     <Content Include="ViewByCompany.aspx" />
     <Content Include="ViewByCountry.aspx" />
     <Content Include="LogOut.aspx" />
+    <Content Include="AddCompany.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -89,6 +90,13 @@
     <Compile Include="LogOut.aspx.designer.cs">
       <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Countries.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objects\" />

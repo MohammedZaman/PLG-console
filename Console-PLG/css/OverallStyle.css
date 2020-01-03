@@ -19,3 +19,11 @@ text-align:center;
 background-color:#232b2b;
 }
 
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  opacity: 1;
+  position: relative;
+  margin:10px;
+  pointer-events: auto;
+
+}

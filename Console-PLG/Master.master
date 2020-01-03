@@ -28,7 +28,7 @@
     <div class="nav-wrapper themes">
       <a href="Default.aspx" style="padding:0px 5px;" class="brand-logo">PLG</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li runat="server" id="signMenu"> <a href="SignIn.aspx">Add Company</a></li>
+        <li runat="server" id="signMenu"> <a href="AddCompany.aspx">Add Company</a></li>
           <li runat="server" id="rentalMenu"> <a href="ViewByCompany.aspx">ViewByCompany</a></li>
           <li runat="server" id="returnMenu"> <a href="ViewByCountry.aspx">ViewByCountry</a></li>
            <li runat="server" id="logMenu"> <a href="LogOut.aspx">Log Out</a></li>

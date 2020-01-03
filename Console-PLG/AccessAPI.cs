@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
+using ConsolePLG.Objects;
 
 namespace ConsolePLG
 {
@@ -63,6 +65,18 @@ namespace ConsolePLG
             cli.Headers[HttpRequestHeader.ContentType] = "application/json";
             string response = cli.DownloadString(URL + "Country/" + id);
             return response;
+        }
+
+
+        public String addCompany(List<Countries> company)
+        {
+            String uploadString = Newtonsoft.Json.JsonConvert.SerializeObject(company);
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            var cli = new WebClient();
+            cli.Headers[HttpRequestHeader.ContentType] = "application/json";
+            string response = cli.UploadString(URL + "Company", uploadString);
+            return response;
+
         }
 
     }

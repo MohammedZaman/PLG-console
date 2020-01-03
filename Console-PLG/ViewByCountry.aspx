@@ -5,7 +5,7 @@
   <div class="col s12 l4 offset-l4">
     <div class="card grey lighten-3">
       <div class="card-content">
-        <h4 class="card-title center-align">View By Company</h4>
+        <h4 class="card-title center-align">View By Country</h4>
        
          <div class="row ">
             <div class="input-field col s12"> 
