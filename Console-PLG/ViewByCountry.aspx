@@ -23,7 +23,7 @@
             <div class="row ">
             <div class="input-field col s12"> 
         
-             <asp:DropDownList CssClass="dropdown-trigger btn"   ID="companiesDropDown" Enabled="False" runat="server">
+             <asp:DropDownList CssClass="dropdown-trigger btn"   ID="companiesDropDown" runat="server">
              </asp:DropDownList>
             
                
